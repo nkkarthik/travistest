@@ -1,0 +1,9 @@
+language: elixir
+elixir:
+  - 1.10.0
+deploy:
+  provider: releases
+  file: _build/prod/rel/travistest
+#  token: <enc>
+#  on:
+#    tags: true

@@ -1,9 +1,8 @@
 language: elixir
 elixir:
-  - 1.9.4
+- 1.9.4
 deploy:
   provider: releases
   file: _build/prod/rel/travistest
-#  on:
-#    tags: false
-#  token: <enc>
+  token:
+    secure: H8MpeEobbq9beJkxXFDfVG+5CljfG+hWM5E/44sLPXYubEFXT5bA83QbjRLXiOov9qQhbNx7g8PNx8bs++ZnTp9lolFsUOIgLAaVzQYzCc8uvvzeaVXhovpcYC5apS1nNBiuS3o3aSIBjAVL6wGxLTlUx4yQQtQf5MqW+3b19pckG36PJM9/K6sCXZTwE46vLkCYrnfwkcSFeKPRKLuFskJI/72JCsfsPSH7vRCX6mOpKwsfhjj52SaWGqyXWaVxPEdlB75YUMRl8OS7nsVWcvJsQ2PaCKd5nFC7e5+Y7c3jX6xbS/tZqJ3VcYoBsDMAy9Yz26nrYO/dK8QRj0ioLq2EpWicdfT/+r2GM3/czPAPJeaPftVKdeiadykrpjke0dHB/9yjBgnyjkjWHGQCYxIYcDQ/reQamMBUBGoYDfxsUTUt2SWFaMp66XkBA3o+ig4VKDxxbWzvUMDI8vmKzCLN+QLpB87Dplxi3PJn4R+TMKYPoBnc8J0pJc6HVDvbrlwj9yKmx2/DH8HYMJmAL2evushWvMFMcFtLcA6a5w5TAezGxUaOmJpexYywhnWpbKSc0RElathJ8SiGIULoye/cHtH34AfWaBrSQvATEyjRziBgZBfCBS0zx0cGhVc6p6UUidMexi6nSk/IEJg2oqjOb+r2ztI6YdpvTx5zZQk=

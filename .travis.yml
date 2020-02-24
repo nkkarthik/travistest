@@ -1,16 +1,15 @@
 language: elixir
 elixir:
-- 1.9.4
-before_deploy:
-- git config --local user.name nkkarthik
-- git config --local user.email nkkarthik@gmail.com
-- export TRAVIS_TAG=${TRAVIS_TAG:-$(date + '%Y%m%d%H%M%S')-$(git log --format=%h -1)}
-- git tag $TRAVIS_TAG
+  - 1.9.4
+#before_deploy:
+#  - git config --local user.name nkkarthik
+#  - git config --local user.email nkkarthik@gmail.com
+#  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date + '%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+#  - git tag $TRAVIS_TAG
 deploy:
   provider: releases
   file: _build/prod/rel/travistest/*
   overwrite: true
+#  draft: true
   on:
     tags: true
-  token:
-    secure: iU2PKcPqEF/05lR5zlaM6+fS/2l4Ap68V71d4Srmszsa73kWK1kRieoGDZWpn7YwU29eLXe3IW+QSuQylMZ3ZgHNxHyQaCp0SLmNrDLK9bLIrc7lVuxcwusWVjxX/nwLgcYM5NfKQFbE4R/6WnP0ntdW6Rhh8uwK3BiJbKkUx+gYtCwKuSeK4f6k4K+cqARGWGPfbnv+HBa3fHz4reWaQfOaUvp8lpz9kF0z61pSsEya1aZSimiSD1ysKHRIn1WK+ZAl7765/m8R5GOltgqGzias4R4yFMdPSzaY6yiM6N+/unGLY2Tbey9reeKp0BrrJz/r2OdfDbsNcL8bdQwq8rLU6Dq/dczGj7vLmxil/rk9ATzo4+aPHDXdUXXSstbPTUH1a2peIzh7WURww5Ywd4rpQNgzozb4HT2HzPlz6JejsXk8x0QzA5j+Hj3R/vgQayfUaUAtSRmJIAzCPsS3eFo82kqPWxO/vi9UAMQV3QSc5s9zgZlYEiTTZwr2SanqMAJL++2pq81Yr6cIYkqsKVGAnLRbUeomFmYFeAdhIQg9U4UPx5d6Irvz5sAy60LT2P+3SAQ0pdZJIxVmeoIMF2NUn5ZVJAGiccbmkOSrsoynN5fdpiRQ0PVYrHUOw0keY05JhWcBanNc4dqwmGL6wNqFWYIcRRvJvQatFBCho68=

@@ -5,5 +5,5 @@ deploy:
   provider: releases
   file: _build/prod/rel/travistest
 #  on:
-#    tags: true
+#    tags: false
 #  token: <enc>
